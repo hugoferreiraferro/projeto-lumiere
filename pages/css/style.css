@@ -3,12 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 :root {
-  /* add fonts */
   --cor-principal: #ede4db;
   --cor-botao: #716243;
   --Fundo-caixas-workshop: #faf7f3;
   --fundo-depoimentos: #f6f0e9;
+  /* fonte dos titulos principais */
+  --font-principlal: "Cormorant Garamond", serif;
+  /*fonte dos titulos secundario*/
+  --font-secundaria: "Open Sans", sans-serif;
 }
 /*======cabecalho====== */
 .container_header {
@@ -25,14 +33,17 @@
 }
 
 .btn_workshops {
+  border: var(--cor-botao);
   background-color: var(--cor-botao);
   width: 55%;
-  font-size: 18px;
+  font-size: 19px;
   padding: 13px;
   border-radius: 6px;
   cursor: pointer;
-  border: none;
+  font-family: var(--font-principlal);
+  font-weight: 700;
 }
+
 .btn_workshops:hover {
   background-color: #605337;
   transition: 0.3s;
@@ -55,6 +66,9 @@
 
 .moverParaDireita h1 {
   font-size: 4rem;
+  font-family: var(--font-principlal);
+  font-weight: 600;
+  color: #5c4f3c;
 }
 
 /*=====Workshops Populares======*/
@@ -70,9 +84,15 @@
 
 .workshops_populares h2 {
   font-size: 2rem;
+  font-family: var(--font-principlal);
+  font-weight: 600;
+  color: #5c4f3c;
 }
 .workshops_populares h3 {
   font-size: 1.5rem;
+  font-family: var(--font-secundaria);
+  font-weight: 300;
+  color: #4b4431;
 }
 
 .workshops_cards {
@@ -85,7 +105,8 @@
 .cards {
   text-align: center;
   padding-bottom: 10px;
-  background-color: rgb(222, 222, 222);
+  background-color: #faf0e6;
+  border-radius: 5px;
   cursor: pointer;
 }
 .cards:hover {
@@ -117,9 +138,14 @@
   width: 35%;
   font-size: 1.2rem;
   line-height: 1.5;
+  font-family: var(--font-secundaria); /*add font italica*/
+  font-weight: 300;
+  color: #5b352b;
 }
 .container_depoimentos h2 {
   font-size: 2rem;
+  font-family: var(--font-principlal);
+  font-weight: 600;
 }
 /* =======sobre======= */
 
@@ -133,20 +159,28 @@
   z-index: -1;
 }
 .container_sobre img {
-  width: 20%;
+  width: 30%;
   object-fit: cover;
   border-radius: 10px;
 }
 .container_sobre h2 {
   font-size: 2rem;
+  font-family: var(--font-principlal);
+  font-weight: 600;
+  color: #5c4f3c;
 }
 .container_sobre p {
   font-size: 1.3rem;
   padding: 10px;
+  font-family: var(--font-secundaria);
+  font-weight: 300;
 }
 .container_sobre h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  font-family: var(--font-secundaria);
+  font-weight: 500;
+  color: #5c4f3c;
 }
 
 /* ========Footer========== */
