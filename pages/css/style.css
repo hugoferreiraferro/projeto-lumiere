@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* add fonts */
+  --cor-principal: #ede4db;
+  --cor-botao: #716243;
+  --Fundo-caixas-workshop: #faf7f3;
+  --fundo-depoimentos: #f6f0e9;
+}
+/*======cabecalho====== */
+.container_header {
+  background-color: var(--cor-principal);
+  display: flex;
+  width: 100vw;
+  height: 30vw;
+}
+
+.container_header img {
+  z-index: 1;
+  position: relative;
+  width: 45%;
+}
+
+.btn_workshops {
+  background-color: var(--cor-botao);
+  width: 55%;
+  font-size: 18px;
+  padding: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+.btn_workshops:hover {
+  background-color: #605337;
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+.btn_workshops a {
+  text-decoration: none;
+  color: white;
+}
+.moverParaDireita {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  width: 20%;
+  position: relative;
+  left: 20%;
+  gap: 20px;
+}
+
+.moverParaDireita h1 {
+  font-size: 4rem;
+}
+
+/*=====Workshops Populares======*/
+.workshops_populares {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  background-color: var(--fundo-depoimentos);
+}
+
+.workshops_populares h2 {
+  font-size: 2rem;
+}
+.workshops_populares h3 {
+  font-size: 1.5rem;
+}
+
+.workshops_cards {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.cards {
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: rgb(222, 222, 222);
+  cursor: pointer;
+}
+.cards:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
+
+.cards img {
+  width: 23vw;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ======Depoimentos======= */
+
+.container_depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 16vh;
+  background-color: var(--Fundo-caixas-workshop);
+  padding: 20px;
+  gap: 20px;
+  font-size: 19px;
+}
+.container_depoimentos p {
+  text-align: center;
+  width: 35%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.container_depoimentos h2 {
+  font-size: 2rem;
+}
+/* =======sobre======= */
+
+.container_sobre {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  z-index: -1;
+}
+.container_sobre img {
+  width: 20%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.container_sobre h2 {
+  font-size: 2rem;
+}
+.container_sobre p {
+  font-size: 1.3rem;
+  padding: 10px;
+}
+.container_sobre h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* ========Footer========== */
+.container_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: var(--cor-principal);
+  padding: 20px;
+}
+.redes_sociais {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.redes_sociais a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
