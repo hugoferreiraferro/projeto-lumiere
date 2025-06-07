@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  caret-color: transparent;
 }
 
 body {
@@ -69,6 +70,33 @@ body {
   font-family: var(--font-principlal);
   font-weight: 600;
   color: #5c4f3c;
+}
+
+.container_menu {
+  width: 31%;
+  height: 15px;
+  margin-top: 10px;
+}
+
+.container_menu ul {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  gap: 20px;
+}
+
+.container_menu ul li a {
+  font-size: 1.3rem;
+  font-family: var(--font-secundaria);
+  font-weight: 500;
+  color: #5c4f3c;
+  text-decoration: none;
+  color: #5c4f3c;
+}
+.container_menu ul li a:hover {
+  color: #443a26;
+  transition: 0.3s;
+  text-decoration: underline;
 }
 
 /*=====Workshops Populares======*/
@@ -202,4 +230,35 @@ body {
   text-decoration: none;
   color: black;
   font-size: 1.3rem;
+}
+.redes_sociais a:hover {
+  color: #605337;
+  transition: 0.3s;
+}
+
+/*tela de contato */
+
+.btn-danger,
+.btn-success {
+  background-color: var(--cor-botao);
+}
+.modal-content {
+  background-color: var(--cor-principal);
+  border-radius: 10px;
+}
+.modal-header {
+  border-bottom: black;
+}
+.modal-title {
+  font-family: var(--font-principlal);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #5c4f3c;
+}
+
+.displayNoneUm {
+  display: none;
+}
+.displayNoneDois {
+  display: none;
 }
