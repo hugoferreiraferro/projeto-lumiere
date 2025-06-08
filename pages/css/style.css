@@ -59,7 +59,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: start;
-  width: 20%;
+  width: 21%;
   position: relative;
   left: 20%;
   gap: 20px;
@@ -261,4 +261,95 @@ body {
 }
 .displayNoneDois {
   display: none;
+}
+
+/* responsividade */
+/*arrumar o contato para um lugar melhor=========================================== */
+@media (max-width: 1024px) {
+  .container_header {
+    flex-direction: row;
+    height: auto;
+  }
+  .container_header img {
+    width: 50%;
+  }
+  .moverParaDireita {
+    left: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .btn_workshops {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .container_menu {
+    width: 100%;
+    margin-top: 3%;
+  }
+  #btnSobre {
+    display: none;
+  }
+  .container_menu ul {
+    justify-content: center;
+  }
+  .container_depoimentos {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container_header {
+    flex-direction: column;
+    height: auto;
+  }
+  .container_header img {
+    width: 100%;
+  }
+  .moverParaDireita {
+    left: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .btn_workshops {
+    width: 90%;
+    font-size: 25px;
+  }
+  .btn_workshops:active {
+    transform: scale(0.95);
+  }
+  .container_menu {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+  .container_menu li {
+    padding: 10px;
+  }
+  .container_menu:active li {
+    transform: scale(0.95);
+  }
+  #btnSobre {
+    display: block;
+  }
+  .container_menu ul {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .workshops_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards img {
+    width: 35%;
+    margin-bottom: 20px;
+  }
+
+  .cards h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
 }

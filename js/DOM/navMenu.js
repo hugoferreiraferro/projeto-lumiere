@@ -5,6 +5,8 @@ const link = document.getElementById("link_contado");
 const displayUm = document.querySelector(".displayNoneUm");
 const displayDois = document.querySelector(".displayNoneDois");
 let contato = "https://wa.me/5511999999999";
+
+// Botão "Sim" que exibe o modal de contato e o link do WhatsApp
 btnSimModal.addEventListener("click", () => {
   respostaCliente.textContent = "Sim";
   setTimeout(() => {
