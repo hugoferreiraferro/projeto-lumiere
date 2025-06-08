@@ -344,12 +344,79 @@ body {
     align-items: center;
   }
   .cards img {
-    width: 35%;
+    width: 40%;
     margin-bottom: 20px;
   }
 
   .cards h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
+  }
+  #modalContato {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-dialog {
+    width: 600px;
+  }
+}
+@media (max-width: 480px) {
+  .container_header {
+    flex-direction: column;
+    height: auto;
+  }
+  .container_header img {
+    width: 100%;
+  }
+  .btn_workshops {
+    width: 90%;
+    font-size: 25px;
+  }
+  .btn_workshops:active {
+    transform: scale(0.95);
+  }
+  .container_menu li {
+    padding: 12px;
+  }
+  .container_menu:active li {
+    transform: scale(0.95);
+  }
+  .cards img {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  .container_depoimentos p {
+    font-size: 21px;
+  }
+  .container_depoimentos h2 {
+    font-size: 30px;
+  }
+  .container_sobre {
+    font-size: 20px;
+  }
+  .container_sobre img {
+    display: none;
+  }
+
+  #modalContato {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-dialog {
+    width: 600px;
   }
 }
