@@ -358,14 +358,6 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .modal {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-  }
-  .modal-dialog {
-    width: 600px;
-  }
 }
 @media (max-width: 480px) {
   .container_header {
