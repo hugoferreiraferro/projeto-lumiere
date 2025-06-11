@@ -9,6 +9,12 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+
+.workshops_populares h2,
+.container_depoimentos h2,
+.container_sobre h2 {
+  margin-bottom: 24px;
+}
 :root {
   --cor-principal: #ede4db;
   --cor-botao: #716243;
@@ -43,12 +49,17 @@ body {
   cursor: pointer;
   font-family: var(--font-principlal);
   font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition:
+    background 0.3s,
+    transform 0.2s,
+    box-shadow 0.3s;
 }
 
 .btn_workshops:hover {
-  background-color: #605337;
-  transition: 0.3s;
+  background-color: #443a26;
   transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 .btn_workshops a {
   text-decoration: none;
@@ -134,18 +145,29 @@ body {
   text-align: center;
   padding-bottom: 10px;
   background-color: #faf0e6;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+  transition:
+    box-shadow 0.5s,
+    transform 0.4s;
 }
 .cards:hover {
-  transform: scale(1.01);
-  transition: 0.2s;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+  transform: translateY(-6px) scale(1.03);
 }
 
 .cards img {
   width: 23vw;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.star.selected,
+.star.hover {
+  font-size: 1rem;
+  color: gold;
+  transition: color 0.2s;
 }
 
 /* ======Depoimentos======= */
@@ -162,13 +184,26 @@ body {
   font-size: 19px;
 }
 .container_depoimentos p {
-  text-align: center;
-  width: 35%;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  font-family: var(--font-secundaria); /*add font italica*/
-  font-weight: 300;
+  font-style: italic;
+  position: relative;
   color: #5b352b;
+}
+
+.container_depoimentos p::before {
+  content: '"';
+  left: -20px;
+  top: -10px;
+  position: absolute;
+  color: #5b352b;
+  font-size: 2rem;
+}
+.container_depoimentos p::after {
+  content: '"';
+  right: -20px;
+  bottom: -10px;
+  position: absolute;
+  color: #5b352b;
+  font-size: 2rem;
 }
 .container_depoimentos h2 {
   font-size: 2rem;
@@ -189,7 +224,8 @@ body {
 .container_sobre img {
   width: 30%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .container_sobre h2 {
   font-size: 2rem;
@@ -347,6 +383,9 @@ body {
     width: 40%;
     margin-bottom: 20px;
   }
+  .cards {
+    box-shadow: none !important;
+  }
 
   .cards h3 {
     font-size: 1.7rem;
@@ -395,20 +434,5 @@ body {
   }
   .container_sobre img {
     display: none;
-  }
-
-  #modalContato {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  .modal {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-  }
-  .modal-dialog {
-    width: 600px;
   }
 }
