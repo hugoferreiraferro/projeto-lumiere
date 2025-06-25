@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "bootstrap-icons": "^1.13.1",
+    "prettier": "^3.5.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "eslint": "^9.28.0",
+    "globals": "^16.2.0",
+    "typescript-eslint": "^7.3.1"
+  }
+}

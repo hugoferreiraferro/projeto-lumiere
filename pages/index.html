@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubra a beleza que transforma com Lumiere. Workshops de skincare, maquiagem e massagem para o seu bem-estar."
+    />
+    <meta
+      name="keywords"
+      content="lumiere, beleza, workshops, skincare, maquiagem, massagem, bem-estar, estética"
+    />
+    <meta name="author" content="Lumiere" />
+    <meta name="theme-color" content="#ede4db" />
+    <meta property="og:image" content="/img/icone.png" />
+    <meta property="og:title" content="Lumiere | Home" />
+
+    <link rel="shortcut icon" href="/img/icone.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>lumiere | Home</title>
+  </head>
+  <body>
+    <header class="container_header">
+      <img src="/img/img_principal.png" alt="Imagem principal" />
+      <div class="moverParaDireita">
+        <h1>Descubra a Beleza que Transforma</h1>
+        <button class="btn_workshops"><a href="#">Ver Workshops</a></button>
+      </div>
+      <nav class="container_menu">
+        <ul>
+          <li><a id="btnSobre" href="#">Sobre</a></li>
+          <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#confirmModal"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div
+        class="modal fade"
+        id="confirmModal"
+        tabindex="-1"
+        aria-labelledby="confirmModalLabel"
+        aria-hidden="true"
+        id="modalContato"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content text-center">
+            <div class="modal-header">
+              <h5 class="modal-title w-100" id="confirmModalLabel">Contato</h5>
+            </div>
+            <div class="modal-body">
+              <p class="w-50 fs-5">Deseja entrar em contato?</p>
+              <p class="text-end me-5 fs-5" id="res_sim_cliente"></p>
+              <p class="w-50 fs-5" id="res_contado">
+                <img class="displayNoneUm" src="/img/loading.gif" />
+              </p>
+              <p class="w-50 fs-5">
+                <a id="link_contado" href=""></a
+                ><img class="displayNoneDois" src="/img/loading.gif" />
+              </p>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-success" id="sim_modal">
+                Sim
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Não
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="container_main">
+      <section class="workshops_populares">
+        <h2>Workshops Populares</h2>
+        <div class="workshops_cards">
+          <div class="cards">
+            <img src="/img/img_Skincare.png" alt="Imagem curso 1" />
+            <h3>skincare</h3>
+            <div class="container text-center">
+              <h3 class="mb-1">Avaliações:</h3>
+              <div class="star-rating">
+                <i class="bi bi-star-fill star" data-value="1"></i>
+                <i class="bi bi-star-fill star" data-value="2"></i>
+                <i class="bi bi-star-fill star" data-value="3"></i>
+                <i class="bi bi-star-fill star" data-value="4"></i>
+                <i class="bi bi-star-fill star" data-value="5"></i>
+              </div>
+              <p class="rating-text" >Nota: 0</p>
+            </div>
+          </div>
+
+          <div class="cards">
+            <img src="/img/img_Maquiagem.png" alt="Imagem curso 2" />
+            <h3>Maquiagem</h3>
+            <div class="container text-center">
+              <h3 class="mb-1">Avaliações:</h3>
+              <div class="star-rating">
+                <i class="bi bi-star-fill star" data-value="1"></i>
+                <i class="bi bi-star-fill star" data-value="2"></i>
+                <i class="bi bi-star-fill star" data-value="3"></i>
+                <i class="bi bi-star-fill star" data-value="4"></i>
+                <i class="bi bi-star-fill star" data-value="5"></i>
+              </div>
+              <p  class="rating-text">Nota: 0</p>
+            </div>
+          </div>
+
+          <div class="cards">
+            <img src="/img/img_Massagem.png" alt="Imagem curso 3" />
+            <h3>Massagem</h3>
+            <div class="container text-center">
+              <h3 class="mb-1">Avaliações:</h3>
+              <div class="star-rating"">
+                <i class="bi bi-star-fill star" data-value="1"></i>
+                <i class="bi bi-star-fill star" data-value="2"></i>
+                <i class="bi bi-star-fill star" data-value="3"></i>
+                <i class="bi bi-star-fill star" data-value="4"></i>
+                <i class="bi bi-star-fill star" data-value="5"></i>
+              </div>
+              <p class="rating-text">Nota: 0</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container_depoimentos">
+        <h2>Depoimentos</h2>
+        <p>
+          Participar do Workshop foi uma experíencia incrivel. Aprendi muito e
+          me senti realmente inspirada.
+        </p>
+      </section>
+
+      <section class="container_sobre">
+        <img src="/img/img_Grupo.png" alt="Imagem sobre" />
+        <div class="sobre_textos">
+          <h2>Sobre</h2>
+          <p>
+            Lumiere é um espaço dedicado ao bem-estar e à beleza, que
+            transformam a sua relação com a estética e o autocuidado. Nossa
+            missão é inspirar e capacitar você a descobrir a beleza que
+            transforma.
+          </p>
+          <div class="missaoTxt">
+            <h3>Nossa missão é capacitar e inspirar através da beleza</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container_footer">
+      <p>©2025 Lumiere. Todos os direitos reservados.</p>
+      <nav class="redes_sociais">
+        <a href="#">TikTok</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </nav>
+    </footer>
+  </body>
+  <script type="module" src="/js/DOM/workshops_cards.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/DOM/navMenu.js"></script>
+</html>
