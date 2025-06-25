@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    caret-color: transparent;
+  }
+   body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--Fundo-caixas-workshop) ;
+  }
+   :root {
+    --cor-principal: #ede4db;
+    --cor-botao: #716243;
+    --Fundo-caixas-workshop: #faf7f3;
+    --fundo-depoimentos: #f6f0e9;
+    /* fonte dos titulos principais */
+    --font-principlal: "Cormorant Garamond", serif;
+    /*fonte dos titulos secundario*/
+    --font-secundaria: "Open Sans", sans-serif;
+  }
+  /*======cabecalho====== */
+   .container_header {
+    background-color: var(--cor-principal);
+    display: flex;
+    width: 100vw;
+  }
+   .topo {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    font-size: 40px;
+    font-family: var(--font-principlal);
+  }
+ .square div{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 400px;         
+    height: 300px;        
+    background-color: transparent; 
+    border: 2px solid black;                        
+  }
+ .aba{
+    width: 300px ;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+ }
+
+ 
