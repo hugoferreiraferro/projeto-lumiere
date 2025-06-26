@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
+     <meta
       name="description"
       content="Descubra a beleza que transforma com Lumiere. Workshops de skincare, maquiagem e massagem para o seu bem-estar."
     />
@@ -15,15 +15,14 @@
     <meta name="theme-color" content="#ede4db" />
     <meta property="og:image" content="/img/icone.png" />
     <meta property="og:title" content="Lumiere | Home" />
-
-    <link rel="shortcut icon" href="/img/icone.png" type="image/png" />
+    <title>Lumière | Home</title>
+      <link rel="shortcut icon" href="/img/icone (2).png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
+      rel="stylesheet"/>
+      <link
       rel="stylesheet"
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
@@ -31,106 +30,126 @@
       rel="stylesheet"
       href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
     />
-
-    <link rel="stylesheet" href="css/style.css" />
-    <title>lumiere | Home</title>
+    <link rel="stylesheet" href="/pages/css/style.css">
   </head>
   <body>
     <header class="container_header">
-      <img src="/img/img_principal.png" alt="Imagem principal" />
-      <div class="moverParaDireita">
-        <h1>Descubra a Beleza que Transforma</h1>
-        <button class="btn_workshops"><a href="#">Ver Workshops</a></button>
-      </div>
-      <nav class="container_menu">
-        <ul>
-          <li><a id="btnSobre" href="#">Sobre</a></li>
-          <li>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#confirmModal"
-              >Contato</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <div
-        class="modal fade"
-        id="confirmModal"
-        tabindex="-1"
-        aria-labelledby="confirmModalLabel"
-        aria-hidden="true"
-        id="modalContato"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content text-center">
-            <div class="modal-header">
-              <h5 class="modal-title w-100" id="confirmModalLabel">Contato</h5>
-            </div>
-            <div class="modal-body">
-              <p class="w-50 fs-5">Deseja entrar em contato?</p>
-              <p class="text-end me-5 fs-5" id="res_sim_cliente"></p>
-              <p class="w-50 fs-5" id="res_contado">
-                <img class="displayNoneUm" src="/img/loading.gif" />
-              </p>
-              <p class="w-50 fs-5">
-                <a id="link_contado" href=""></a
-                ><img class="displayNoneDois" src="/img/loading.gif" />
-              </p>
-            </div>
-            <div class="modal-footer justify-content-center">
-              <button type="button" class="btn btn-success" id="sim_modal">
-                Sim
-              </button>
-              <button
-                type="button"
-                class="btn btn-danger"
-                data-bs-dismiss="modal"
-              >
-                Não
-              </button>
-            </div>
-          </div>
+      <section class="header_nav">
+        <nav class="nav_menu">
+          <ul>
+            <li><a href="/pages/index.html">Home</a></li>
+            <li><a href="">Tratamentos</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">contato</a></li>
+            <li><a href="">Nossa Unidade</a></li>
+          </ul>
+          <button class="link-whatsapp">Agende sua consulta</button>
+          <button class="workshop_btn">workshop</button>
+        </nav>
+      </section>
+      <section class="header__TXT">
+        <h1>Lumière</h1>
+        <p>Descubra a Beleza que Transforma</p>
+        <div class="icon">
+          <button>Agende pelo whatsapp <img src="/img/whatsapp.png" alt="icon whatsapp" /></button>
         </div>
+      </section>
+      <div class="img_primary"></div>
+    </header>
+    <main class="container__main">
+      <section class="main_testimony">
+        <h1>Depoimentos</h1>
+        <p>"Sabe quando você participa de algo e sente que estava no lugar certo, na hora certa? Foi exatamente assim. O Workshop me trouxe muito mais do que aprendizado técnico — me reconectei comigo mesma. Saí inspirada, com novas ideias e com vontade de colocar tudo em prática!"</p>
+         <div class="blackk"></div>
+        <p>"O Workshop foi direto ao ponto. Os conteúdos foram bem aplicáveis no dia a dia e os facilitadores souberam conduzir com clareza. Com certeza saí mais preparada e confiante para colocar tudo em prática."</p>
+         <div class="blackk"></div>
+        <p>"Foi simplesmente tudo! Eu amei cada parte, desde as palestras até os momentos de interação. Me senti super acolhida e aprendi coisas que não vejo nem na faculdade. Já quero o próximo!"</p>
+      </section>
+      <div class="separation"></div>
+      <section class="about">
+        <h1>Sobre</h1>
+        <p>
+          Lumiere é um espaço dedicado ao bem-estar e à beleza, que transformam
+          a sua relação com a estética e o autocuidado. Nossa missão é inspirar
+          e capacitar você a descobrir a beleza que transforma.
+        </p>
+        <img src="/img/img_Grupo.png" alt="img_grupo">
+      </section>
+      <div class="separation"></div>
+      <div class="objective_txt">
+        <h1>QUAL É O SEU OBJETIVO?</h1>
       </div>
-    </section>
-    <main class="container_main">
-      <section class="workshops_populares">
-        <h2>Workshops Populares</h2>
-        <div class="workshops_cards">
-          <div class="cards">
-            <img src="/img/img_Skincare.png" alt="Imagem curso 1" />
-            <h3>skincare</h3>
-            <div class="container text-center">
-              <h3 class="mb-1">Avaliações:</h3>
-              <div class="star-rating">
-                <i class="bi bi-star-fill star" data-value="1"></i>
-                <i class="bi bi-star-fill star" data-value="2"></i>
-                <i class="bi bi-star-fill star" data-value="3"></i>
-                <i class="bi bi-star-fill star" data-value="4"></i>
-                <i class="bi bi-star-fill star" data-value="5"></i>
-              </div>
-              <p class="rating-text" >Nota: 0</p>
-            </div>
-          </div>
-
-          <div class="cards">
-            <img src="/img/img_Maquiagem.png" alt="Imagem curso 2" />
-            <h3>Maquiagem</h3>
-            <div class="container text-center">
-              <h3 class="mb-1">Avaliações:</h3>
-              <div class="star-rating">
-                <i class="bi bi-star-fill star" data-value="1"></i>
-                <i class="bi bi-star-fill star" data-value="2"></i>
-                <i class="bi bi-star-fill star" data-value="3"></i>
-                <i class="bi bi-star-fill star" data-value="4"></i>
-                <i class="bi bi-star-fill star" data-value="5"></i>
-              </div>
-              <p  class="rating-text">Nota: 0</p>
-            </div>
-          </div>
-
-          <div class="cards">
+      <section class="container_objective">
+        <div class="objective_img">
+          <a href="#"><img src="/img/img_Massagem.png" alt="img 1" /></a>
+          <h2>Massagem</h2>
+        </div>
+        <div class="objective_img">
+          <a href="#"><img src="/img/img_Massagem.png" alt="img 2" /></a>
+          <h2>Massagem</h2>
+        </div>
+        <div class="objective_img">
+          <a href="#"><img src="/img/img_Massagem.png" alt="img 3" /></a>
+          <h2>Massagem</h2>
+        </div>
+        <div class="objective_img">
+          <a href="#"><img src="/img/img_Massagem.png" alt="img 4" /></a>
+          <h2>Massagem</h2>
+        </div>
+      
+      </section>
+      <div class="separation"></div>
+      <div class="procedures_txt">
+        <h2>PROCEDIMENTOS</h2>
+      </div>
+      <section class="container_procedures">
+        <div>
+          <a href="#"><img src="/img/20250624_1630_Corpo em Transformação_simple_compose_01jyhpnvbnehdar4t4x71p17nv.png" alt="facial" /></a>
+          <h3>Massagem</h3>
+        </div>
+        <div>
+          <a href="#"><img src="/img/20250624_1703_Masagem Preto e Dourado_simple_compose_01jyhrjdy9ek595fxk1ad5szcs.png" alt="facial" /></a>
+          <h3>Massagem</h3>
+        </div>
+        <div>
+          <a href="#"><img src="/img/20250624_1630_Corpo em Transformação_simple_compose_01jyhpnvbnehdar4t4x71p17nv.png" alt="facial" /></a>
+          <h3>Massagem</h3>
+        </div>
+        <div>
+          <a href="#"><img src="/img/20250624_1703_Masagem Preto e Dourado_simple_compose_01jyhrjdy9ek595fxk1ad5szcs.png" alt="facial" /></a>
+          <h3>Massagem</h3>
+        </div>
+      </section>
+      <div class="separation"></div>
+      <section class="aesthetic_group">
+        <div class="aesthetic_txt">
+          <h1>Acompanhamento personalizado</h1>
+        </div>
+        <div class="group_img">
+          <img src="/img/img_Grupo.png" alt="img grupo" />
+        </div>
+        <p>
+          Sabemos como é essencial sentir confiança nos profissionais que cuidam
+          da sua beleza, autoestima e bem-estar.
+        </p>
+        <p>
+          Por isso, você será atendido(a) por uma equipe de especialistas em
+          estética, dedicada a oferecer um acompanhamento completo, com atenção
+          aos detalhes e foco nos seus resultados.
+        </p>
+        <p>
+          Agende sua consulta e descubra como podemos transformar sua
+          experiência de cuidado e realçar ainda mais sua beleza.
+        </p>
+      </section>
+      <div class="separation"></div>
+      <div class="Workshop_txt">
+        <h1>Nossos Workshops </h1>
+      </div>
+      <section class="container_Workshop">
+        
+        <div class="box">
+                <div class="cards">
             <img src="/img/img_Massagem.png" alt="Imagem curso 3" />
             <h3>Massagem</h3>
             <div class="container text-center">
@@ -142,46 +161,77 @@
                 <i class="bi bi-star-fill star" data-value="4"></i>
                 <i class="bi bi-star-fill star" data-value="5"></i>
               </div>
-              <p class="rating-text">Nota: 0</p>
+            </div>
+          </div>
+
+              <div class="cards">
+            <img src="/img/img_Skincare.png" alt="Imagem curso 3" />
+            <h3>Massagem</h3>
+            <div class="container text-center">
+              <h3 class="mb-1">Avaliações:</h3>
+              <div class="star-rating"">
+                <i class="bi bi-star-fill star" data-value="1"></i>
+                <i class="bi bi-star-fill star" data-value="2"></i>
+                <i class="bi bi-star-fill star" data-value="3"></i>
+                <i class="bi bi-star-fill star" data-value="4"></i>
+                <i class="bi bi-star-fill star" data-value="5"></i>
+              </div>
+            </div>
+          </div>
+
+              <div class="cards">
+            <img src="/img/img_Maquiagem.png" alt="Imagem curso 3" />
+            <h3>Massagem</h3>
+            <div class="container text-center">
+              <h3 class="mb-1">Avaliações:</h3>
+              <div class="star-rating"">
+                <i class="bi bi-star-fill star" data-value="1"></i>
+                <i class="bi bi-star-fill star" data-value="2"></i>
+                <i class="bi bi-star-fill star" data-value="3"></i>
+                <i class="bi bi-star-fill star" data-value="4"></i>
+                <i class="bi bi-star-fill star" data-value="5"></i>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="container_depoimentos">
-        <h2>Depoimentos</h2>
-        <p>
-          Participar do Workshop foi uma experíencia incrivel. Aprendi muito e
-          me senti realmente inspirada.
-        </p>
-      </section>
-
-      <section class="container_sobre">
-        <img src="/img/img_Grupo.png" alt="Imagem sobre" />
-        <div class="sobre_textos">
-          <h2>Sobre</h2>
-          <p>
-            Lumiere é um espaço dedicado ao bem-estar e à beleza, que
-            transformam a sua relação com a estética e o autocuidado. Nossa
-            missão é inspirar e capacitar você a descobrir a beleza que
-            transforma.
-          </p>
-          <div class="missaoTxt">
-            <h3>Nossa missão é capacitar e inspirar através da beleza</h3>
-          </div>
+       <div class="separation"></div>
+       <div class="location_txt">
+         <h1>Conheça nossa unidade:</h1>
+       </div>
+       <section class="container_location">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.7049486495443!2d-43.41811098798946!3d-22.997874841048187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdc87fb95122b%3A0x3a78f69eccf91d15!2sAv.%20Di%20Cavalcanti%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022793-320!5e0!3m2!1spt-BR!2sbr!4v1750943660062!5m2!1spt-BR!2sbr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <h3>Unidade Barra da Tijuca - RJ</h3>
+         <p>Av. Di Cavalcanti - Barra da Tijuca, Rio de Janeiro - RJ, 22793-320</p>
+        <div class="box-scheduling">
+            <h1>DESPERTE SUA AUTO ESTIMA</h1>
+             <button>Agende pelo whatsapp<img src="/img/whatsapp.png" alt="img_zap"></button>
         </div>
       </section>
     </main>
+     <div class="separation"></div>
     <footer class="container_footer">
-      <p>©2025 Lumiere. Todos os direitos reservados.</p>
-      <nav class="redes_sociais">
-        <a href="#">TikTok</a>
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-      </nav>
+      <div class="Procedures_footer">
+        <h2>Procedimentos</h2>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+      </div>
+      <div class="about_company">
+        <h2>Institucional</h2>
+        <ul>
+            <li>Sobre</li>
+            <li>Contato</li>
+        </ul>        
+      </div>
+      <div class="operation">
+        <h2>Horário de Funcionamento</h2>
+        <p>seg-sex   10:00am - 20:00pm</p>
+      </div>
+        <img src="/img/icone (2).png" alt="logo">
     </footer>
   </body>
-  <script type="module" src="/js/DOM/workshops_cards.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="/js/DOM/navMenu.js"></script>
 </html>
