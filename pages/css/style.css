@@ -117,6 +117,7 @@ body {
   font-family: var(--font-secundaria), sans-serif;
 }
 .icon button {
+
   display: flex;
   align-items: center;
   border: none;
@@ -133,7 +134,8 @@ body {
   transform: scale(1.05);
 }
 .icon img {
-  width: 25px;
+  width: 35px;
+  padding: 5px;
 }
 
 /* Depoimentos */
@@ -193,6 +195,7 @@ body {
   color: var(--cor-texto);
 }
 .about img {
+  box-shadow: 5px 5px 10px  5px #716243;
   width: 35vw;
   height: auto;
   display: block;
@@ -209,6 +212,7 @@ body {
   font-family: var(--font-principal), serif;
 }
 .container_objective {
+  
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -219,8 +223,9 @@ body {
   font-family: var(--font-secundaria), sans-serif;
 }
 .container_objective img {
+  border-radius: 15px;
   width: 22vw;
-  height: 35vw;
+  height: 25vw;
 }
 .container_objective img:hover {
   filter: grayscale(100%);
@@ -345,11 +350,17 @@ body {
 .container_location {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-evenly;
+  flex-direction: row;
   height: 30vw;
   background: var(--fundo-unidade);
   font-family: var(--font-secundaria), sans-serif;
+}
+.container_location div{
+  display: grid;
+  text-align: left;
+  grid-template-columns: auto;
+  gap: 20px;
 }
 .container_location h3,
 .container_location p {
@@ -359,9 +370,10 @@ body {
 .container_location button {
   display: flex;
   align-items: center;
+  width: 15vw;
   border: none;
   gap: 10px;
-  padding: 7px;
+  padding: 15px;
   font-size: 18px;
   background-color: #25d366;
   color: white;
@@ -376,25 +388,18 @@ body {
 }
 
 .container_location img {
-  width: 25px;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 3px;
+  left: 10px;
+  width: 30px;
 }
 .location_txt {
   text-align: center;
 }
 
-/* AGENDAMENTO */
-.box-scheduling {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
-  height: 150px;
-  gap: 10px;
-  margin-top: 10px;
-  background: var(--fundo-objetivo);
-  font-family: var(--font-secundaria), sans-serif;
-}
+
 
 /* footer */
 .container_footer {
