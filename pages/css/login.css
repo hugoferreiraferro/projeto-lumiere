@@ -5,20 +5,38 @@
     --fundo-depoimentos: #f6f0e9;
     --cor-titulo: #a38f75; /* Marrom mais claro */
     --font-principal: "Cormorant Garamond", serif;
-    --font-secundaria: "Open Sans", sans-serif;
+    --font-secundaria: "Open Sans", sans-serif;   
 }
 
 body {
+    
     background-color: var(--cor-principal);
     font-family: var(--font-secundaria);
 }
 
 .container {
     display: flex;
-    justify-content: center; /* Alinha para a direita */
+    justify-content: flex-start; 
     align-items: center;
     min-height: 100vh;
 }
+
+#image_login{
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    width: 10cm;
+    height: 10cm;
+}
+
+.btn-home {
+    display: flex;
+    padding: 10px 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+  }
 
 .card {
     background-color: var(--fundo-caixas-workshop);
@@ -44,7 +62,7 @@ body {
 }
 
 .btn {
-    background-color: var(--cor-botao);
+    background-color: var(--cor-titulo);
     border: none;
     padding: 10px;
     border-radius: 8px;
@@ -71,4 +89,59 @@ body {
     flex-wrap: wrap;
     display: flex;
     width: 45%;
+}
+
+#Lumiere_login{
+    font-family: var(--font-principal);
+    color: #d5bb77;
+    font-size: 3cm; 
+    text-shadow: 2px 2px 5px #a38f75;  
+    position: relative;
+    overflow: hidden;
+}
+
+.img_login {
+    width: 15cm;  /* ou o tamanho que preferir */
+    height: auto; /* manter proporção da imagem */
+    flex-shrink: 0; /* evita encolher */
+}
+
+.img_login img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+.text_inferior{
+    background-color: var(--cor-titulo);
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.barra-topo,
+.barra-baixo {
+  height: 80px;
+  width: 100%;
+  background-color: var(--cor-botao);
+  position: fixed;
+  left: 0;
+  z-index: 1;
+}
+
+.barra-topo {
+  top: 0;
+}
+
+.barra-baixo {
+  bottom: 0;
 }
