@@ -31,6 +31,7 @@
       href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="/pages/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="container_header">
@@ -57,15 +58,25 @@
     </header>
     <main class="container__main">
       <section class="main_testimony">
+        <div data-aos="fade-letf" data-aos-duration="2000">
         <h1>Depoimentos</h1>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2000">
         <p>"Sabe quando você participa de algo e sente que estava no lugar certo, na hora certa? Foi exatamente assim. O Workshop me trouxe muito mais do que aprendizado técnico — me reconectei comigo mesma. Saí inspirada, com novas ideias e com vontade de colocar tudo em prática!"</p>
-         <div class="blackk"></div>
+        </div>
+        <div class="blackk"></div>
+        <div data-aos="fade-left" data-aos-duration="2000">
         <p>"O Workshop foi direto ao ponto. Os conteúdos foram bem aplicáveis no dia a dia e os facilitadores souberam conduzir com clareza. Com certeza saí mais preparada e confiante para colocar tudo em prática."</p>
-         <div class="blackk"></div>
+      </div>  
+      </div>
+        <div class="blackk"></div>
+        <div data-aos="fade-right" data-aos-duration="2000">
         <p>"Foi simplesmente tudo! Eu amei cada parte, desde as palestras até os momentos de interação. Me senti super acolhida e aprendi coisas que não vejo nem na faculdade. Já quero o próximo!"</p>
+        </div>
       </section>
       <div class="separation"></div>
       <section class="about">
+        <div data-aos="fade-right" data-aos-duration="2000">
         <div class="about-content">
           <img src="/img/img_Grupo.png" alt="img_grupo">
           <div class="about-text">
@@ -77,9 +88,10 @@
               Quas dolor hic nam harum voluptatem quae delectus vitae? Quisquam omnis, repellat esse architecto quis accusamus
                voluptas, unde magnam atque dolores rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident 
                autem incidunt maiores voluptatem beatae sed quae neque nostrum asperiores ratione! Non quia eveniet ullam 
-               animi adipisci recusandae odio illo laboriosam.
+               animi adipisci recusandae odio illo laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eveniet esse delectus ut provident voluptate in quas excepturi.   
             </p>
           </div>
+        </div>
         </div>
       </section>
       <div class="separation"></div>
@@ -245,7 +257,11 @@
         <p>seg-sex   10:00am - 20:00pm</p>
       </div>
         <img src="/img/icone (2).png" alt="logo">
-    </footer>
+    </footer> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </html>
