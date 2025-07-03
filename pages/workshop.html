@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop</title>
-    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="/pages/css/workshop.css">
     <link rel="shortcut icon" href="/img/icone.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,10 +16,50 @@
 </head>
 <body>
  <header class="container_header">
-   <p class="topo">CURSO Workshop</p>
+  <div class="topo">
+        <p>CURSO Workshop</p>
+  </div>
+    <nav class="container_menu">
+        <ul>
+          <li><a id="btnSobre" href="#">Home</a></li>
+          <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#confirmModal"
+              >Contato</a
+            >
+          </li>
+          <li>
+             <a id="Aluno" href="#">Pagina do Aluno</a>
+          </li>
+        </ul>
+      </nav>
    </header>
     <section class="curso">
-        <div class="square"></div>
-    </section>
+  <div class="curso-container">
+    <div class="curso-card">
+      <img src="/img/img_Skincare.png" alt="Banner Curso 1 - Cuidados Faciais">
+      <h3>Curso 1: Cuidados Faciais</h3>
+      <p>Aprenda rotinas de skincare para todos os tipos de pele.</p>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn">Assistir vídeo</a>
+    </div>
+    <div class="curso-card">
+      <img src="/img/img_Maquiagem.png" alt="Banner Curso 2 - Maquiagem Profissional">
+      <h3>Curso 2: Maquiagem Profissional</h3>
+      <p>Dicas avançadas para uma make impecável em qualquer ocasião.</p>
+      <a href="https://www.youtube.com/watch?v=3fumBcKC6RE" target="_blank" class="btn">Assistir vídeo</a>
+    </div>
+    <div class="curso-card">
+      <img src="/img/img_Grupo.png" alt="Banner Curso 3 - Design de Sobrancelhas">
+      <h3>Curso 3: Design de Sobrancelhas</h3>
+      <p>Domine técnicas de mapeamento e alinhamento para clientes.</p>
+      <a href="https://www.youtube.com/watch?v=lTTajzrSkCw" target="_blank" class="btn">Assistir vídeo</a>
+    </div>
+    <div class="curso-card">
+      <img src="/img/img_Massagem.png" alt="Banner Curso 4 - Spa & Bem-Estar">
+      <h3>Curso 4: Spa & Bem-Estar</h3>
+      <p>Crie experiências relaxantes e cuide da autoestima dos seus clientes.</p>
+      <a href="https://www.youtube.com/watch?v=IcrbM1l_BoI" target="_blank" class="btn">Assistir vídeo</a>
+    </div>
+  </div>
+</section>
 </body>
 </html>
