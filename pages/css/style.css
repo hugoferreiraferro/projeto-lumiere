@@ -94,6 +94,10 @@ body {
 .workshop_btn:hover {
   background-color: #5c4f3c;
 }
+.workshop_btn a{
+  color: white;
+  font-size: 14px;
+}
 
 .header__TXT {
   display: flex;
