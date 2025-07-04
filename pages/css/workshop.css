@@ -40,33 +40,14 @@ body {
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 1px;
-  margin: 0; /* remove margens padrão */
-  line-height: 1; /* mantém altura menor */
-  display: flex;
-  align-items: center; /* alinha verticalmente */
-  height: 100%;
 }
 
 .container_header {
   background-color: var(--cor-background);
-  color: #fffaf0;;
-}
-
-.topo { 
-    display: flex;
-    align-items: center;
-  
-}
-
-
-.container_menu {
-  align-items: center; /* alinha o menu verticalmente */
+  color: var(--cor-titulo);
 }
 /* Menu à direita */
 .container_menu ul {
-  height: auto;
-  width: 95vw;
-  justify-content: end;
   list-style: none;
   display: flex;
   gap: 1.5rem;
@@ -74,7 +55,7 @@ body {
 
 .container_menu a {
   text-decoration: none;
-  color: #fffaf0;;
+  color: var(--cor-titulo);
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -83,7 +64,8 @@ body {
 
 .container_menu a:hover,
 .container_menu a:focus {
-  background-color: var(--cor-titulo);
+  background-color: #f7d774;
+  color: #3e2e1c;
 }
 
 /* Seção curso */
@@ -109,7 +91,6 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -152,7 +133,7 @@ body {
 }
 
 .btn:hover {
-  background-color: var(--cor-titulo);
+  background-color: #3e2e1c;
 }
 
 .carousel-container {
@@ -161,7 +142,7 @@ body {
   padding: 20px;
 }
 .curso-card {
-  background-color: #ffffff;
+  background-color: #ede4db;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -184,19 +165,19 @@ body {
 }
 .curso-card h3 {
   font-size: 1.8rem;
-  color: #333;
+  color: #5c4525;
   margin-bottom: 10px;
   font-weight: 600;
 }
 .curso-card p {
   font-size: 1rem;
-  color: #666;
+  color: #5c4525;
   margin-bottom: 20px;
   flex-grow: 1; /* Permite que o parágrafo ocupe o espaço disponível */
 }
 .curso-card .btn {
   display: inline-block;
-  background-color: #0d6efd; /* Cor primária do Bootstrap */
+  background-color: #5c4525; /* Cor primária do Bootstrap */
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 8px;
@@ -205,7 +186,8 @@ body {
   transition: background-color 0.3s ease;
 }
 .curso-card .btn:hover {
-  background-color: #0b5ed7; /* Tom mais escuro ao passar o mouse */
+  background-color: var(--cor-titulo);
+  color: whitesmoke; /* Tom mais escuro ao passar o mouse */
 }
 /* Estilos para o carrossel */
 .carousel-item .row {
