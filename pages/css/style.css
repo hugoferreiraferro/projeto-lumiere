@@ -127,12 +127,12 @@ body {
 }
 
 .icon button {
-
   display: flex;
   align-items: center;
   border: none;
   gap: 10px;
   padding: 7px;
+  padding-left: 16px;
   font-size: 20px;
   background-color: #25d366;
   color: white;
@@ -308,11 +308,51 @@ body {
   font-family: var(--font-secundaria), sans-serif;
   height: 35vw;
 }
-.group_img img {
-  width: 25vw;
+
+.aesthetic_group {
+  display: flex;
+  flex-direction: row-reverse; /* Inverte: imagem direita, texto esquerda */
+  align-items: center;
+  justify-content: center;
+  gap: 500px; /* Espaço entre imagem e texto */
+  padding: 40px;
+  background-color: #fdf6ed; /* Opcional, seguindo seu estilo */
+}
+
+.group_img img{
+  width: 40vw;
+  position: relative;
+  left: -80px;
   height: auto;
   border-radius: 12px;
 }
+
+.text_organizer {
+  width: 40vw;
+  flex: 1;
+  text-align: left;
+  max-width: 600px;
+}
+
+.aesthetic_txt h1 {
+  color: var(--cor-titulo-destaque);
+  font-family: var(--font-principal), serif;
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  font-size: 32px;
+  margin-bottom: 16px;
+  color:var (--cor-titulo-destaque) /* ou a cor que estiver usando */
+}
+
+.text_organizer p {
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 12px;
+  width: 200vw;
+  height: auto;
+}
+
 .aesthetic_group p {
   width: 50vw;
   text-align: center;
@@ -321,10 +361,6 @@ body {
 }
 .aesthetic_txt {
   font-size: 23px;
-}
-.aesthetic_txt h1 {
-  color: var(--cor-titulo-destaque);
-  font-family: var(--font-principal), serif;
 }
 
 /* Workshops */

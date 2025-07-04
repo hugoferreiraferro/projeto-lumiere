@@ -10,7 +10,6 @@
 
 body {
     
-    background-color: var(--cor-principal);
     font-family: var(--font-secundaria);
 }
 
@@ -145,3 +144,18 @@ body {
 .barra-baixo {
   bottom: 0;
 }
+.background_image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-image: url(/img/background_login.jpg);
+  filter: blur(10px);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  }
+  
+
