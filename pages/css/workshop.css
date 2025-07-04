@@ -136,4 +136,89 @@ body {
   background-color: #3e2e1c;
 }
 
+.carousel-container {
+  max-width: 1200px; /* Aumentar a largura máxima para acomodar 3 cards */
+  margin: auto;
+  padding: 20px;
+}
+.curso-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px; /* Espaçamento inferior para cards em colunas */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Garante que os cards tenham a mesma altura */
+}
+.curso-card:hover {
+  transform: translateY(-5px);
+}
+.curso-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.curso-card h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.curso-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Permite que o parágrafo ocupe o espaço disponível */
+}
+.curso-card .btn {
+  display: inline-block;
+  background-color: #0d6efd; /* Cor primária do Bootstrap */
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.curso-card .btn:hover {
+  background-color: #0b5ed7; /* Tom mais escuro ao passar o mouse */
+}
+/* Estilos para o carrossel */
+.carousel-item .row {
+  justify-content: center; /* Centraliza as colunas dentro da linha */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 15px;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #0d6efd;
+}
+/* Responsividade para exibir 1 coluna em telas pequenas, 2 em médias e 3 em grandes */
+@media (max-width: 767.98px) {
+  .carousel-item .col-md-4 {
+      flex: 0 0 100%; /* Uma coluna em telas extra pequenas e pequenas */
+      max-width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .carousel-item .col-md-4 {
+      flex: 0 0 50%; /* Duas colunas em telas médias */
+      max-width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item .col-md-4 {
+      flex: 0 0 33.333333%; /* Três colunas em telas grandes e extra grandes */
+      max-width: 33.333333%;
+  }
+}
+
  
