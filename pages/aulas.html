@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso Online</title>
+    <link rel="stylesheet" href="css/aulas.css">
+</head>
+<link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+
+<body>
+    <nav>
+        <div class="top_menu">
+            <h1>Lumiere</h1>
+            <div class="links">
+                <a href="home.html">home</a>
+                <a href="workshop.html">workshop</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <main class="content">
+            <h1>Aula 1 - Boas-vindas</h1>
+            <div class="video-container" style="width: 70vw; height: auto;">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Video Aula" frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="description">
+                <h2>Descrição:</h2>
+                <p>Bem-vindo ao curso! Nesta primeira aula, você conhecerá os objetivos do curso e como aproveitar
+                    melhor as
+                    aulas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eveniet illo nemo labore
+                    nesciunt veniam, exercitationem consequatur hic. Similique iure voluptatem magni beatae nemo
+                    incidunt corporis cum molestiae magnam aperiam! Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Veritatis assumenda cupiditate at minus suscipit quia eius, maxime, culpa asperiores ipsa
+                    animi, nihil placeat explicabo vero. Fugit, perferendis. Neque, rerum! Tempore?</p>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <div class="modulo" id="modulo1">
+                <h2 onclick="toggleModulo(this)">
+                    Módulo 1: Introdução
+                    <span class="arrow">▲</span>
+                </h2>
+                <ul class="modulo-lista">
+                    <li><label><input type="checkbox" class="aula-checkbox" data-aula="1"> Aula 1 - Boas-vindas</label>
+                    </li>
+                    <li><label><input type="checkbox" class="aula-checkbox" data-aula="2"> Aula 2 - Apresentação do
+                            Curso</label></li>
+                    <li><label><input type="checkbox" class="aula-checkbox" data-aula="3"> Aula 3 - Como usar a
+                            plataforma</label></li>
+                </ul>
+            </div>
+            <div class="modulo" id="modulo1">
+                <h2 onclick="toggleModulo(this)">
+                    Módulo 1: Introdução
+                    <span class="arrow">▲</span>
+                </h2>
+                <ul class="modulo-lista">
+                    <li><label><input type="checkbox" class="aula-checkbox" data-aula="1"> Aula 1 - Boas-vindas</label>
+                    </li>
+                    <li><label><input type="checkbox" class="aula-checkbox" data-aula="2"> Aula 2 - Apresentação do
+                            Curso</label></li>
+                    <li><label><input type="checkbox" class="aula-checkbox" data-aula="3"> Aula 3 - Como usar a
+                            plataforma</label></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="scripts/aula.js"></script>
+</body>
+
+</html>

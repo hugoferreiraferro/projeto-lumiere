@@ -792,3 +792,107 @@ body {
     width: 130px;
   }
 }
+
+/* === MEDIA QUERY PERSONALIZADA PARA PÁGINA DO CURSO === */
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .modulo ul li {
+    font-size: 16px;
+    word-break: break-word;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .content h1, .content p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .video-container {
+    width: 100%;
+    left: 0;
+    padding-bottom: 56.25%;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 10px;
+  }
+
+  .modulo h2 {
+    font-size: 16px;
+  }
+
+  .modulo ul li {
+    font-size: 14px;
+    word-break: break-word;
+  }
+
+  .content h1, .content p {
+    font-size: 18px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .video-container {
+    padding-bottom: 56.25%;
+  }
+
+  .video-container iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 5px;
+  }
+
+  .modulo h2 {
+    font-size: 14px;
+  }
+
+  .modulo ul li {
+    font-size: 12px;
+    padding: 4px 8px;
+    word-break: break-word;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .content h1, .content p {
+    font-size: 16px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .video-container {
+    padding-bottom: 56.25%;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
