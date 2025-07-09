@@ -43,7 +43,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/img/img_principal.png);
+  background-image: url(/assets/img/img_principal.png);
   background-color: var(--cor-principal);
   background-size: contain;
   background-repeat: no-repeat;
@@ -94,9 +94,10 @@ body {
 .workshop_btn:hover {
   background-color: #5c4f3c;
 }
-.workshop_btn a{
+.workshop_btn a {
   color: white;
-  font-size: 14px;
+  font-size: 20px;
+  font-family: var(--font-secundaria), sans-serif;
 }
 
 .header__TXT {
@@ -113,7 +114,7 @@ body {
   height: 90%;
   z-index: 1;
 }
-.header__TXT img{
+.header__TXT img {
   width: 30vw;
 }
 .header__TXT h1 {
@@ -200,7 +201,6 @@ body {
   border-radius: 10px; /* opcional para bordas arredondadas */
 }
 
- 
 .about h1 {
   display: flex;
   justify-content: center;
@@ -209,7 +209,7 @@ body {
   font-family: var(--font-principal), serif;
 }
 
-.about-text{
+.about-text {
   position: relative;
   left: -250px;
   width: 30vw;
@@ -240,7 +240,6 @@ body {
   font-family: var(--font-principal), serif;
 }
 .container_objective {
-  
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -323,7 +322,7 @@ body {
   background-color: #fdf6ed; /* Opcional, seguindo seu estilo */
 }
 
-.group_img img{
+.group_img img {
   width: 40vw;
   position: relative;
   left: -80px;
@@ -346,7 +345,7 @@ body {
   width: 50vw;
   font-size: 32px;
   margin-bottom: 16px;
-  color:var (--cor-titulo-destaque) /* ou a cor que estiver usando */
+  color: var (--cor-titulo-destaque); /* ou a cor que estiver usando */
 }
 
 .text_organizer p {
@@ -406,7 +405,7 @@ body {
 
 /* unidade */
 .location_txt h1 {
-  font-size:  2.5rem;
+  font-size: 2.5rem;
   color: var(--cor-titulo-destaque);
   font-family: var(--font-principal), serif;
   background: var(--fundo-unidade);
@@ -420,7 +419,7 @@ body {
   background: var(--fundo-unidade);
   font-family: var(--font-secundaria), sans-serif;
 }
-.container_location div{
+.container_location div {
   display: grid;
   text-align: left;
   grid-template-columns: auto;
@@ -463,8 +462,6 @@ body {
 .location_txt {
   text-align: center;
 }
-
-
 
 /* footer */
 .container_footer {
@@ -814,7 +811,8 @@ body {
     padding: 20px;
   }
 
-  .content h1, .content p {
+  .content h1,
+  .content p {
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
@@ -845,7 +843,8 @@ body {
     word-break: break-word;
   }
 
-  .content h1, .content p {
+  .content h1,
+  .content p {
     font-size: 18px;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -879,7 +878,8 @@ body {
     padding: 15px;
   }
 
-  .content h1, .content p {
+  .content h1,
+  .content p {
     font-size: 16px;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -894,5 +894,3 @@ body {
     height: 100%;
   }
 }
-
-

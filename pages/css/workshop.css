@@ -8,7 +8,6 @@
 :root {
   --cor-titulo: #a38f75; /* Marrom mais claro */
   --cor-background: #716243;
-
 }
 
 html {
@@ -17,7 +16,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #fffaf0;
   color: #333;
   line-height: 1.6;
@@ -31,35 +30,38 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Título à esquerda */
 .topo p {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
 .container_header {
   background-color: var(--cor-background);
-  color: var(--cor-titulo);
+  color: wheat;
 }
 /* Menu à direita */
 .container_menu ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .container_menu a {
   text-decoration: none;
-  color: var(--cor-titulo);
+  color: wheat;
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .container_menu a:hover,
@@ -89,7 +91,9 @@ body {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
 }
@@ -108,7 +112,7 @@ body {
 .curso-card h3 {
   display: flex;
   justify-content: center;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.25rem;
   color: #5c4525;
   margin: 1rem;
@@ -205,21 +209,19 @@ body {
 /* Responsividade para exibir 1 coluna em telas pequenas, 2 em médias e 3 em grandes */
 @media (max-width: 767.98px) {
   .carousel-item .col-md-4 {
-      flex: 0 0 100%; /* Uma coluna em telas extra pequenas e pequenas */
-      max-width: 100%;
+    flex: 0 0 100%; /* Uma coluna em telas extra pequenas e pequenas */
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .carousel-item .col-md-4 {
-      flex: 0 0 50%; /* Duas colunas em telas médias */
-      max-width: 50%;
+    flex: 0 0 50%; /* Duas colunas em telas médias */
+    max-width: 50%;
   }
 }
 @media (min-width: 992px) {
   .carousel-item .col-md-4 {
-      flex: 0 0 33.333333%; /* Três colunas em telas grandes e extra grandes */
-      max-width: 33.333333%;
+    flex: 0 0 33.333333%; /* Três colunas em telas grandes e extra grandes */
+    max-width: 33.333333%;
   }
 }
-
- 
