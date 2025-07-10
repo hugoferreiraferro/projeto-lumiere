@@ -55,3 +55,20 @@ body {
 .nav-link:hover {
   color: white;
 }
+
+@media (max-width: 768px) {
+  .container_header img {
+    width: 17vw;
+  }
+  .custom-nav {
+    flex-direction: column;
+  }
+  .container_main {
+    position: relative;
+    bottom: 30px;
+  }
+  .btn-primary {
+    width: 100%;
+    margin-top: 5px;
+  }
+}

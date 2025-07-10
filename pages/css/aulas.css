@@ -1,183 +1,180 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --font-secundaria: "Open Sans", sans-serif;
+  --font-secundaria: "Open Sans", sans-serif;
 }
 
 body {
-    padding-top: 50px;
-    font-family: Arial, sans-serif;
-    background-color: #dbdbdb;
+  padding-top: 50px;
+  font-family: Arial, sans-serif;
+  background-color: #dbdbdb;
 }
 
 .top_menu {
-    font-family: var(--font-secundaria);
-    background-color: #8A6F5E;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    position: fixed;
-    /* fixa no topo */
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    /* fica na frente */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    /* sombra opcional para destaque */
+  font-family: var(--font-secundaria);
+  background-color: #8a6f5e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  /* fixa no topo */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /* fica na frente */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  /* sombra opcional para destaque */
 }
 
 .top_menu h1 {
-    margin: 0;
-    color: white;
+  margin: 0;
+  color: white;
 }
 
 .top_menu a {
-    color: white;
-    text-decoration: none !important;
-    /* tive que adicionar pq não estava reconhecendo*/
-    margin-left: 20px;
-    padding: 5px 10px;
-    border-radius: 6px;
-    background-color: transparent;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    display: inline-block;
+  color: white;
+  text-decoration: none !important;
+  /* tive que adicionar pq não estava reconhecendo*/
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: transparent;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+  display: inline-block;
 }
 
 /* Ao passar o mouse, aumenta e muda a cor do fundo */
 .top_menu a:hover {
-    background-color: #C6AEA3;
-    transform: scale(1.1);
-    color: #ffffff;
+  background-color: #c6aea3;
+  transform: scale(1.1);
+  color: #ffffff;
 }
 
-
 .links a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    /* espaçamento entre links */
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  /* espaçamento entre links */
 }
 
 .links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
 .container {
-    border: 1px white solid;
-    display: flex;
-    min-height: 100vh;
+  border: 1px white solid;
+  display: flex;
+  min-height: 100vh;
 }
 
 .sidebar {
-    width: 250px;
-    background-color: #8A6F5E;
-    color: white;
-    padding: 20px;
+  width: 250px;
+  background-color: #8a6f5e;
+  color: white;
+  padding: 20px;
 }
 
 .modulo h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    user-select: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
 }
 
 .modulo .arrow {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
-
-
 
 /* Oculta a lista inicialmente */
 .modulo-lista {
-    list-style: none;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: all 0.3s ease;
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 /* Classe ativada via JS */
 .modulo.ativo .modulo-lista {
-    max-height: 500px;
-    opacity: 1;
+  max-height: 500px;
+  opacity: 1;
 }
 
 /* Roda a setinha */
 .modulo.ativo .arrow {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .modulo ul li {
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    background-color: transparent;
-    color: white;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  background-color: transparent;
+  color: white;
 }
 
 .modulo ul li:hover {
-    background-color: #C6AEA3;
-    color: white;
+  background-color: #c6aea3;
+  color: white;
 }
-
 
 /* Remove margem do último item para evitar espaço extra no final */
 .modulo ul li:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-
-
 .content {
-    flex: 1;
-    padding: 40px;
-    background-color: #f0f0f0;
+  flex: 1;
+  padding: 40px;
+  background-color: #f0f0f0;
 }
 
 .content h1 {
-    margin-bottom: 20px;
-    color: #333;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .video-container {
-    margin: 0 auto 20px;
-    position: relative;
-    left: -60px;
-    padding-bottom: 56.25%;
-    /* mantém proporção 16:9 */
-    height: 0;
+  margin: 0 auto 20px;
+  position: relative;
+  left: -60px;
+  padding-bottom: 56.25%;
+  /* mantém proporção 16:9 */
+  height: 0;
 }
 
 .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70vw;
-    height: 100%;
-    border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70vw;
+  height: 100%;
+  border: none;
 }
 
 .description {
-    width: 70vw;
-    height: auto;
+  width: 70vw;
+  height: auto;
 }
 
 .description p {
-    position: relative;
-    top: 10px;
+  position: relative;
+  top: 10px;
 }
 
 .progress-wrapper {
@@ -203,7 +200,6 @@ body {
 #btnConcluir:hover {
   background-color: #5c4f3c;
 }
-
 
 .progress-container {
   width: 100%;
@@ -241,9 +237,9 @@ body {
 #modulo1 {
   padding: 15px 20px;
   margin-bottom: 25px;
-  border-top: 2px solid #C6AEA3;    /* linha fina em cima */
-  border-bottom: 2px solid #C6AEA3; /* linha fina embaixo */
-  background-color: transparent;    /* sem fundo */
+  border-top: 2px solid #c6aea3; /* linha fina em cima */
+  border-bottom: 2px solid #c6aea3; /* linha fina embaixo */
+  background-color: transparent; /* sem fundo */
   width: 100%;
   box-sizing: border-box;
 }
@@ -280,7 +276,9 @@ body {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease;
 }
 
 /* Quando o módulo está ativo, mostra a lista */
