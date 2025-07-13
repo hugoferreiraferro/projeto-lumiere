@@ -484,6 +484,18 @@ body {
   width: 8vw;
 }
 
+.image_depoimento {
+  width: 150px;
+  height: 150px;
+  background-image: url('/assets/img/foto-png-cortada.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+
+
 /* === NOTEBOOK - max-width: 1024px === */
 @media (max-width: 1024px) {
   .header__TXT {
