@@ -154,3 +154,14 @@ body {
   background-position: center;
   z-index: -1;
 }
+
+@media (max-width: 1024px) {
+  .img_login {
+    width: 100%;
+    height: auto;
+  }
+  .barra-baixo,
+  .barra-topo {
+    display: none;
+  }
+}

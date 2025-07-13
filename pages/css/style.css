@@ -27,6 +27,7 @@ body {
   background-color: var(--cor-principal);
   font-family: var(--font-secundaria), sans-serif;
   color: var(--cor-texto);
+  box-sizing: border-box;
 }
 
 /* HEADER */
@@ -158,7 +159,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 20px;
   flex-direction: column;
   width: 100%;
   height: 35vw;
@@ -503,406 +504,211 @@ body {
     top: -20px;
     width: 80%;
   }
-
-  .nav_menu ul {
-    margin-left: 50px;
-    font-size: 18px;
-  }
-
-  .nav_menu button {
-    font-size: 16px;
-    padding: 0.4em 1em;
-  }
-
-  .container_objective,
-  .container_procedures,
-  .container_Workshop .box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .objective_img,
-  .container_procedures > div,
-  .cards {
-    flex: 1 1 45%;
-    max-width: 45%;
-  }
-
-  .objective_img img,
-  .container_procedures img,
-  .cards img {
-    width: 100%;
-    height: auto;
-  }
-
-  .container_location {
+  .main_testimony {
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-    height: auto;
+    align-items: center;
+    justify-content: center;
+    height: 40vw;
   }
-
-  .container_location iframe {
-    width: 100%;
-    height: 300px;
-  }
-
-  .container_location button {
-    width: auto;
-  }
-
   .main_testimony p {
-    font-size: 18px;
-  }
-}
-
-/* 2. Notebook até 1024px */
-@media (max-width: 1024px) {
-  /* Navegação: deixa menu com espaçamento e botões menores */
-  .nav_menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    font-size: 18px;
-    padding-left: 0;
-  }
-
-  .nav_menu ul li {
-    list-style: none;
-  }
-
-  .nav_menu button {
-    padding: 0.5em 1em;
-    font-size: 16px;
-  }
-
-  /* Seções de objetivos, procedimentos e workshops: grid flexível */
-  .container_objective,
-  .container_procedures,
-  .container_Workshop .box {
-    display: flex;
-    flex-wrap: wrap;
+    gap: 2px;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
+    width: 52vw;
   }
-
-  /* Itens ocupam 45% no notebook */
-  .objective_img,
-  .container_procedures > div,
-  .cards {
-    flex: 1 1 45%;
-    max-width: 45%;
+  .about-text {
+    height: 30vw;
   }
-
-  /* Imagens responsivas */
-  .objective_img img,
-  .container_procedures img,
-  .cards img {
-    width: 100%;
-    height: auto;
-    display: block;
+  .about-text p {
+    width: 45vw;
+    font-size: 19px;
   }
-
-  /* Ajuste no mapa */
+  .aesthetic_group {
+    height: 45vw;
+  }
+  .aesthetic_group .group_img img {
+    position: relative;
+    left: -150px;
+  }
+  .aesthetic_group .text_organizer {
+    width: 50vw;
+    position: relative;
+    left: 200px;
+  }
+  .container_Workshop {
+    height: 30vw;
+  }
   .container_location {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+    height: 40vw;
   }
-
-  .container_location > div {
-    flex: 1 1 45%;
-  }
-
-  .container_location iframe {
-    width: 100%;
-    height: 350px;
-  }
-}
-
-/* 3. Tablet até 768px */
-@media (max-width: 768px) {
-  /* Menu vira coluna */
-  .nav_menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav_menu ul {
-    flex-direction: column;
-    gap: 12px;
-    padding-left: 0;
-    margin-bottom: 10px;
-  }
-
-  .nav_menu ul li {
-    list-style: none;
-  }
-
-  .nav_menu button {
-    width: 90%;
-    margin: 5px auto;
-    font-size: 16px;
-  }
-
-  /* Seções de objetivos, procedimentos e workshops empilham */
-  .container_objective,
-  .container_procedures,
-  .container_Workshop .box {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .objective_img,
-  .container_procedures > div,
-  .cards {
-    flex: 1 1 90%;
-    max-width: 90%;
-  }
-
-  .objective_img img,
-  .container_procedures img,
-  .cards img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Mapa e texto lado a lado vira coluna */
-  .container_location {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .container_location > div {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .container_location iframe {
-    width: 100%;
-    height: 250px;
-  }
-
-  /* Ajustes textos */
-  .main_testimony p,
-  .about p,
-  .aesthetic_group p {
-    font-size: 16px;
-    width: 90vw;
-    margin: 0 auto 15px;
-  }
-
-  /* Imagens grupos mais finas */
-  .about img,
-  .group_img img {
-    max-width: 350px;
-    width: 90vw;
-    display: block;
-    margin: 0 auto;
-  }
-
-  /* Footer empilha */
-  footer.container_footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-  }
-
-  footer.container_footer img {
-    width: 150px;
-  }
-}
-
-/* 4. Celular até 480px */
-@media (max-width: 480px) {
-  /* Texto menor */
-  .header__TXT p {
-    font-size: 1rem;
-  }
-
-  /* Menu lista mais compacta */
-  .nav_menu ul {
-    gap: 8px;
-    font-size: 14px;
-  }
-
-  .nav_menu button {
-    padding: 0.3em 0.8em;
-    font-size: 14px;
-    width: 100%;
-  }
-
-  /* Cards e grids 100% largura */
-  .container_objective,
-  .container_procedures,
-  .container_Workshop .box {
-    gap: 12px;
-  }
-
-  .objective_img,
-  .container_procedures > div,
-  .cards {
-    max-width: 100%;
-  }
-
-  .objective_img img,
-  .container_procedures img,
-  .cards img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Container location e mapa */
-  .container_location {
-    padding: 10px;
-    gap: 10px;
-  }
-
-  .container_location iframe {
-    width: 100%;
-    height: 200px;
-  }
-
   .container_location button {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  /* Textos menores */
-  .main_testimony p,
-  .about p,
-  .aesthetic_group p {
-    font-size: 14px;
-    width: 95vw;
-  }
-
-  /* Imagens grupo menores */
-  .about img,
-  .group_img img {
-    max-width: 300px;
-    width: 95vw;
-  }
-
-  /* Footer mais compacto */
-  footer.container_footer {
-    gap: 15px;
-    padding: 10px;
-  }
-
-  footer.container_footer img {
-    width: 130px;
+    width: 21vw;
+    font-size: 19px;
   }
 }
-
-/* === MEDIA QUERY PERSONALIZADA PARA PÁGINA DO CURSO === */
-
 @media (max-width: 1024px) {
-  .container {
-    flex-direction: column;
+  .img_primary {
+    filter: blur(3px);
   }
-
-  .sidebar {
+  .container_header {
+    height: 70vw;
+  }
+  .header_nav {
     width: 100%;
-    padding: 10px;
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
   }
-
-  .modulo ul li {
-    font-size: 16px;
-    word-break: break-word;
+  .header__TXT {
+    text-align: center;
+    position: relative;
+    left: -9px;
   }
-
-  .content {
+  .header__TXT p {
+    color: black;
+  }
+  .main_testimony {
+    height: 60vw;
+    width: 100vw;
+  }
+  .about {
+    height: 50vw;
+  }
+  .about P {
+    width: 60vw;
+    font-size: 20px;
+  }
+  .about img {
+    position: relative;
+    left: 0;
+  }
+  .about-text {
+    width: 60vw;
+    height: 40vw;
+    left: 0;
+  }
+  .aesthetic_group {
+    flex-direction: column;
+    gap: 40px;
+    height: auto;
+    width: 100vw;
     padding: 20px;
   }
-
-  .content h1,
-  .content p {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
-
-  .video-container {
-    width: 100%;
+  .aesthetic_group .group_img img,
+  .aesthetic_group .text_organizer {
     left: 0;
-    padding-bottom: 56.25%;
+    width: 50vw;
+    max-width: 100%;
   }
-
-  .video-container iframe {
-    width: 100%;
-    height: 100%;
+  .text_organizer {
+    width: 80vw;
+    max-width: 100%;
+    left: 0;
   }
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    padding: 10px;
+  .container_Workshop {
+    height: auto;
+    width: 100vw;
+    padding: 20px 0;
   }
-
-  .modulo h2 {
-    font-size: 16px;
+  .container_location {
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    padding: 20px 0;
+    gap: 30px;
   }
-
-  .modulo ul li {
-    font-size: 14px;
-    word-break: break-word;
-  }
-
-  .content h1,
-  .content p {
+  .container_location button {
+    width: 60vw;
+    justify-content: center;
     font-size: 18px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
-
-  .video-container {
-    padding-bottom: 56.25%;
-  }
-
-  .video-container iframe {
-    width: 100%;
+    flex-direction: row;
   }
 }
+@media (max-width: 768px) {
+  .nav_menu {
+    margin-top: 32px;
+    margin-left: 0;
 
-@media (max-width: 480px) {
-  .sidebar {
-    padding: 5px;
+    align-items: center;
+    height: auto;
   }
-
-  .modulo h2 {
-    font-size: 14px;
+  .main_testimony {
+    height: auto;
+    width: 100vw;
+    padding: 20px 0;
   }
-
-  .modulo ul li {
-    font-size: 12px;
-    padding: 4px 8px;
-    word-break: break-word;
+  .about {
+    height: 100vw;
+    width: 100vw;
   }
-
-  .content {
-    padding: 15px;
+  .about-text p {
+    width: 90vw;
+    text-align: center;
   }
-
-  .content h1,
-  .content p {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .about-content img {
+    order: 0;
+    width: 80vw;
+    max-width: 300px;
+    margin: 0 auto 12px auto;
+    left: 0;
+    display: block;
+  }
+  .about-text {
+    order: 1;
+    width: 90vw;
+    left: 0;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .aesthetic_group {
+    flex-direction: column;
+    gap: 24px;
+    height: auto;
+    width: 100vw;
+    padding: 10px 0;
+  }
+  .aesthetic_group .group_img img,
+  .aesthetic_group .text_organizer {
+    left: 0;
+    width: 50vw;
+    max-width: 100%;
+  }
+  .text_organizer {
+    width: 90vw;
+    max-width: 100%;
+    left: 0;
+    padding: 0 10px;
+  }
+  .container_Workshop {
+    height: auto;
+    width: 100vw;
+    padding: 10px 0;
+  }
+  .container_Workshop img {
+    width: 90vw;
+    max-width: 100%;
+  }
+  .container_location {
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    padding: 10px 0;
+    gap: 20px;
+  }
+  .container_location button {
+    width: 90vw;
+    justify-content: center;
     font-size: 16px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    flex-direction: row;
   }
-
-  .video-container {
-    padding-bottom: 56.25%;
-  }
-
-  .video-container iframe {
-    width: 100%;
-    height: 100%;
+  .img_primary {
+    display: none;
   }
 }
