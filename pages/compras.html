@@ -11,27 +11,27 @@
     <link rel="stylesheet" href="/pages/css/compras.css" />
   </head>
 
-  <body>
-    <header>
-      Meu Carrinho
-      <span class="cart-icon">🛒</span>
-    </header>
+  <body id="CarrinhodeCompra">
+    <!-- Navbar minimalista com título -->
+    <header class="navbar-carrinho">
+  <span class="cart-icon">🛒</span>
+  <strong>Meu Carrinho</strong>
+</header>
 
-    <div class="container">
+
+    <div class="container my-4">
       <section class="card">
-        <h2 class="card-header">Seu Carrinho</h2>
+        <h2 class="card-header">Resumo da Compra</h2>
         <div class="cart-items">
           <article class="cart-item">
             <div
               class="item-thumb"
               style="
-                background-image: url(&quot;https://img-c.udemycdn.com/course/240x135/750012_fc61_3.jpg&quot;);
+                background-image: url('https://img-c.udemycdn.com/course/240x135/750012_fc61_3.jpg');
               "
             ></div>
             <div class="item-details">
-              <a href="#" class="item-title"
-                >Curso Completo de Limpeza de Pele</a
-              >
+              <a href="#" class="item-title">Curso Completo de Limpeza de Pele</a>
               <div class="item-instructor">por João Silva</div>
               <div class="item-price">R$ 79,90</div>
             </div>
@@ -42,7 +42,7 @@
             <div
               class="item-thumb"
               style="
-                background-image: url(&quot;https://img-c.udemycdn.com/course/240x135/3124288_6f29_2.jpg&quot;);
+                background-image: url('https://img-c.udemycdn.com/course/240x135/3124288_6f29_2.jpg');
               "
             ></div>
             <div class="item-details">
@@ -80,9 +80,7 @@
                 name="payment"
                 value="credit"
               />
-              <label for="credit-card" class="payment-label"
-                >Cartão de Crédito</label
-              >
+              <label for="credit-card" class="payment-label">Cartão de Crédito</label>
 
               <input
                 type="radio"
@@ -90,9 +88,7 @@
                 name="payment"
                 value="debit"
               />
-              <label for="debit-card" class="payment-label"
-                >Cartão de Débito</label
-              >
+              <label for="debit-card" class="payment-label">Cartão de Débito</label>
 
               <input type="radio" id="pix" name="payment" value="pix" />
               <label for="pix" class="payment-label">Pix</label>
@@ -107,12 +103,17 @@
       </section>
     </div>
 
+    <footer class="footer-sucinto">
+      <p>© 2025 Lumière Estética • Todos os direitos reservados</p>
+    </footer>
+
     <!-- Modal -->
     <div class="modal" id="payment-modal">
       <div class="modal-content" id="modal-content">
         <!-- Conteúdo dinâmico -->
       </div>
     </div>
+    
     <script src="/js/DOM/compras.js"></script>
   </body>
 </html>
