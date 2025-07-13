@@ -485,10 +485,24 @@ body {
   width: 8vw;
 }
 
-@media (max-width: 1440px) {
-  .icon button {
-    position: relative;
-    top: -30px;
+.image_depoimento {
+  width: 150px;
+  height: 150px;
+  background-image: url('/assets/img/foto-png-cortada.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+
+
+/* === NOTEBOOK - max-width: 1024px === */
+@media (max-width: 1024px) {
+  .header__TXT {
+    left: 10%;
+    top: -20px;
+    width: 80%;
   }
   .main_testimony {
     flex-direction: column;
