@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carrinho de Compras</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/pages/css/compras.css" />
+  </head>
+
+  <body id="CarrinhodeCompra">
+    <!-- Navbar minimalista com título -->
+    <header class="navbar-carrinho">
+  <span class="cart-icon">🛒</span>
+  <strong>Meu Carrinho</strong>
+</header>
+
+
+    <div class="container my-4">
+      <section class="card">
+        <h2 class="card-header">Resumo da Compra</h2>
+        <div class="cart-items">
+          <article class="cart-item">
+            <div
+              class="item-thumb"
+              style="
+                background-image: url('https://img-c.udemycdn.com/course/240x135/750012_fc61_3.jpg');
+              "
+            ></div>
+            <div class="item-details">
+              <a href="#" class="item-title">Curso Completo de Limpeza de Pele</a>
+              <div class="item-instructor">por João Silva</div>
+              <div class="item-price">R$ 79,90</div>
+            </div>
+            <button class="remove-btn">X</button>
+          </article>
+
+          <article class="cart-item">
+            <div
+              class="item-thumb"
+              style="
+                background-image: url('https://img-c.udemycdn.com/course/240x135/3124288_6f29_2.jpg');
+              "
+            ></div>
+            <div class="item-details">
+              <a href="#" class="item-title">Design Gráfico para Iniciantes</a>
+              <div class="item-instructor">por Maria Oliveira</div>
+              <div class="item-price">R$ 59,90</div>
+            </div>
+            <button class="remove-btn">X</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="summary">
+        <h3>Resumo do Pedido</h3>
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <span>R$ 139,80</span>
+        </div>
+        <div class="summary-line">
+          <span>Descontos</span>
+          <span>R$ 0,00</span>
+        </div>
+        <div class="summary-line total">
+          <span>Total</span>
+          <span>R$ 139,80</span>
+        </div>
+
+        <form id="payment-form">
+          <div class="payment-wrapper">
+            <h3>Pagamento</h3>
+            <div class="payment-methods">
+              <input
+                type="radio"
+                id="credit-card"
+                name="payment"
+                value="credit"
+              />
+              <label for="credit-card" class="payment-label">Cartão de Crédito</label>
+
+              <input
+                type="radio"
+                id="debit-card"
+                name="payment"
+                value="debit"
+              />
+              <label for="debit-card" class="payment-label">Cartão de Débito</label>
+
+              <input type="radio" id="pix" name="payment" value="pix" />
+              <label for="pix" class="payment-label">Pix</label>
+
+              <input type="radio" id="boleto" name="payment" value="boleto" />
+              <label for="boleto" class="payment-label">Boleto Bancário</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-finalizar">Finalizar Compra</button>
+        </form>
+      </section>
+    </div>
+
+    <footer class="footer-sucinto">
+      <p>© 2025 Lumière Estética • Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="payment-modal">
+      <div class="modal-content" id="modal-content">
+        <!-- Conteúdo dinâmico -->
+      </div>
+    </div>
+    
+    <script src="/js/DOM/compras.js"></script>
+  </body>
+</html>
