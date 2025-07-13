@@ -1,119 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workshop</title>
-    <link rel="stylesheet" href="/pages/css/workshop.css">
-    <link rel="shortcut icon" href="/img/icone.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workshop Cursos</title>
+  <link rel="stylesheet" href="/pages/css/workshop.css" />
+  <link rel="shortcut icon" href="/img/icone.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
- <header class="container_header">
-  <div class="background_color">  
-  <div class="topo">
-        <p>CURSO Workshop</p>
-  </div>
-    <nav class="container_menu">
-        <ul>
-          <li><a id="btnSobre" href="index.html">Home</a></li>
-          <li>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#confirmModal"
-              >Contato</a
-            >
-          </li>
-          <li>
-             <a id="Aluno" href="login.html">Login</a>
-          </li>
+
+  <!-- === NAVBAR === -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand2" href="#">
+        <p> Workshop Cursos</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/pages/home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/aulas.html">Aulas</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/login.html">Login</a></li>
         </ul>
-      </nav>
+      </div>
     </div>
-   </header>
-    <section class="curso">
-      <div class="carousel-container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-inner">
-                <!-- Slide 1: 3 cards -->
-                <div class="carousel-item active">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-md-4 d-flex">
-                          <div class="curso-card">
-                            <img src="/img/img_Maquiagem.png" alt="Banner Curso 2 - Maquiagem Profissional">
-                            <h3>Maquiagem Profissional</h3>
-                            <p>Dicas avançadas para uma make impecável em qualquer ocasião.</p>
-                            <a href="https://www.youtube.com/watch?v=3fumBcKC6RE" target="_blank" class="btn">Detalhes do curso</a>
-                        </div>
-                        </div>
-                        <div class="col-12 col-md-4 d-flex">
-                          <div class="curso-card">
-                            <img src="/img/img_Skincare.png" alt="Banner Curso 1 - Cuidados Faciais">
-                            <h3>Cuidados Faciais</h3>
-                            <p>Aprenda rotinas de skincare para todos os tipos de pele.</p>
-                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn">Detalhes do curso</a>
-                        </div>
-                        </div>
-                        <div class="col-12 col-md-4 d-flex">
-                          <div class="curso-card">
-                            <img src="/img/img_Massagem.png" alt="Banner Curso 4 - Spa & Bem-Estar">
-                            <h3>Spa & Bem-Estar</h3>
-                            <p>Crie experiências relaxantes e cuide da autoestima dos seus clientes.</p>
-                            <a href="https://www.youtube.com/watch?v=IcrbM1l_BoI" target="_blank" class="btn">Assistir vídeo</a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 2: 1 card + 2 repeated for visual continuity -->
-                <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-md-4 d-flex">
-                            <div class="curso-card">
-                                <img src="/img/img_Massagem.png" alt="Banner Curso 4 - Spa & Bem-Estar">
-                                <h3>Spa & Bem-Estar</h3>
-                                <p>Crie experiências relaxantes e cuide da autoestima dos seus clientes.</p>
-                                <a href="https://www.youtube.com/watch?v=IcrbM1l_BoI" target="_blank" class="btn">Assistir vídeo</a>
-                            </div>
-                        </div>
-                        <!-- Repetindo os dois primeiros cartões para continuidade visual no segundo slide -->
-                        <div class="col-12 col-md-4 d-flex">
-                            <div class="curso-card">
-                                <img src="/img/img_Skincare.png" alt="Banner Curso 1 - Cuidados Faciais">
-                                <h3>Cuidados Faciais</h3>
-                                <p>Aprenda rotinas de skincare para todos os tipos de pele.</p>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn">Detalhes do curso</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 d-flex">
-                            <div class="curso-card">
-                                <img src="/img/img_Maquiagem.png" alt="Banner Curso 2 - Maquiagem Profissional">
-                                <h3>Maquiagem Profissional</h3>
-                                <p>Dicas avançadas para uma make impecável em qualquer ocasião.</p>
-                                <a href="https://www.youtube.com/watch?v=3fumBcKC6RE" target="_blank" class="btn">Detalhes do curso</a>
-                            </div>
-                        </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
+  </nav>
+
+  <!-- === HERO / BANNER === -->
+  <section class="bg-primary2">
+    <div class="container">
+      <h1 class="display-5">Aprenda com as Melhores!</h1>
+      <p class="lead">Desenvolva tudo oque aprender para melhorar sua estetica!</p>
+      <form class="search-bar d-flex justify-content-center mt-4" role="search">
+        <input class="form-control me-2 w-50" type="search" placeholder="Buscar cursos" aria-label="Search">
+        <button class="btn" type="submit">Buscar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- === GRID VERTICAL (tipo Home) === -->
+  <section class="container py-5">
+    <h2 class="mb-4 text-center">Cursos em Destaque</h2>
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="course-card">
+          <img src="/img/img_Maquiagem.png" alt="Maquiagem Profissional">
+          <div class="course-card-body">
+            <h3 class="course-card-title">Maquiagem Profissional</h3>
+            <p class="course-card-text">Dicas avançadas para uma make impecável em qualquer ocasião.</p>
+            <a href="#" class="btn">Ver Detalhes</a>
+          </div>
         </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="course-card">
+          <img src="/img/img_Skincare.png" alt="Cuidados Faciais">
+          <div class="course-card-body">
+            <h3 class="course-card-title">Cuidados Faciais</h3>
+            <p class="course-card-text">Aprenda rotinas de skincare para todos os tipos de pele.</p>
+            <a href="#" class="btn">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="course-card">
+          <img src="/img/img_Massagem.png" alt="Spa & Bem-Estar">
+          <div class="course-card-body">
+            <h3 class="course-card-title">Spa & Bem-Estar</h3>
+            <p class="course-card-text">Crie experiências relaxantes e cuide da autoestima dos seus clientes.</p>
+            <a href="#" class="btn">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </section>
+
+  <!-- === LISTA HORIZONTAL (tipo Search Udemy) === -->
+  <section class="course-list">
+    <h2 class="mb-4 text-center">Todos os Cursos</h2>
+    <div class="course-list-item">
+      <img src="/img/img_Maquiagem.png" alt="Modern JavaScript From The Beginning">
+      <div class="course-info">
+        <h3>Maquiagem</h3>
+        <p class="author">Domine a arte da maquiagem em todos os estilos, 
+          do social ao editorial. Desenvolva habilidades para realçar a beleza, 
+          corrigir imperfeições e criar visuais marcantes que impressionam.</p>
+          <a href="#" target="btn" class="btn">Detalhes do curso</a>
+        <div class="course-meta">
+          <span class="rating">⭐ 4.7 (202,721)</span>
+          <span class="details">21.5 Total de Horas</span>
+        </div>
+        <div class="price">R$18.99</div>
+      </div>
+    </div>
+
+    <div class="course-list-item">
+      <img src="/img/img_Massagem.png" alt="The Modern JavaScript Bootcamp">
+      <div class="course-info">
+        <h3>Massagem</h3>
+        <p class="author">Aprenda manobras de massagem relaxante e terapêutica para aliviar tensões, 
+          melhorar a circulação e promover o bem-estar 
+          integral dos seus clientes com um toque profissional.</p>
+          <a href="#" target="btn" class="btn">Detalhes do curso</a>
+        <div class="course-meta">
+          <span class="rating">⭐ 4.8 (49,435)</span>
+          <span class="details">29.5 Total de Horas</span>
+        </div>
+        <div class="price">R$23.99</div>
+      </div>
+    </div>
+    
+    <div class="course-list-item">
+      <img src="/img/img_cilios.png" alt="The Modern JavaScript Bootcamp">
+      <div class="course-info">
+        <h3>Alongamento de Cílios</h3>
+        <p class="author">Domine o fio a fio, volume russo e híbrido para resultados impecáveis.</p>
+        <a href="#" target="btn" class="btn">Detalhes do curso</a>
+        <div class="course-meta">
+          <span class="rating">⭐ 4.8 (49,435)</span>
+          <span class="details">29.5 Total de Horas</span>
+        </div>
+        <div class="price">R$23.99</div>
+      </div>
+    </div>
+    
+    <div class="course-list-item">
+      <img src="/img/img_pele.png" alt="The Modern JavaScript Bootcamp">
+      <div class="course-info">
+        <h3>Limpeza de Pele Profunda</h3>
+        <p class="author">Técnicas passo a passo para uma pele renovada e saudável.</p>
+        <a href="#" target="btn" class="btn">Detalhes do curso</a>
+        <div class="course-meta">
+          <span class="rating">⭐ 4.8 (49,435)</span>
+          <span class="details">29.5 Total de Horas</span>
+        </div>
+        <div class="price">R$23.99</div>
+      </div>
+    </div>
+    
+    <div class="course-list-item">
+      <img src="/img/img_Skincare.png" alt="The Modern JavaScript Bootcamp">
+      <div class="course-info">
+        <h3>Técnica suave para eliminar toxinas e reduzir inchaços.</h3>
+        <p class="author">Técnica suave para eliminar toxinas e reduzir inchaços.</p>
+        <a href="#" target="btn" class="btn">Detalhes do curso</a>
+        <div class="course-meta">
+          <span class="rating">⭐ 4.8 (49,435)</span>
+          <span class="details">29.5 Total de Horas</span>
+        </div>
+        <div class="price">R$23.99</div>
+      </div>
+    </div>
+    
+    <div class="course-list-item">
+      <img src="/img/img_peeling.png" alt="The Modern JavaScript Bootcamp">
+      <div class="course-info">
+        <h3> Peeling Químico e Mecânico</h3>
+        <p class="author">Aprenda a renovar a pele com segurança e eficácia.</p>
+        <a href="#" target="btn" class="btn">Detalhes do curso</a>
+        <div class="course-meta">
+          <span class="rating">⭐ 4.8 (49,435)</span>
+          <span class="details">29.5 Total de Horas</span>
+        </div>
+        <div class="price">R$23.99</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer>
+    &copy; 2025 Workshop Cursos. Todos os direitos reservados.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

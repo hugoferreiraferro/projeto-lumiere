@@ -1,225 +1,299 @@
-/* Reset básico */
+/* === Variáveis de Cor === */
+:root {
+  --cor-titulo: #a38f75;
+  --cor-background: #716243;
+  --cor-card: #ede4db;
+  --cor-primaria: #5c4525;
+  --cor-hover: #3e2e1c;
+  --cor-dourado: #f7d774;
+  --font-principal: "Cormorant Garamond", serif;
+  --font-secundaria: "Open Sans", sans-serif;
+  --cor-fundo: #fff;
+  --cor-borda: #ddd;
+  --cor-hover-claro: #f7f7f7;
+  --cor-texto: #666;
+  --cor-rating: #b4690e;
+  --cor-preco: #111;
+}
+
+/* === Reset === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root {
-  --cor-titulo: #a38f75; /* Marrom mais claro */
-  --cor-background: #716243;
-
-}
-
 html {
-  font-size: 16px;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #fffaf0;
+  background-color: #f8f9fa;
   color: #333;
   line-height: 1.6;
 }
 
-/* Header container com alinhamento */
-.container_header {
-  background-color: #ede4db;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* === NAVBAR === */
+.navbar {
+  background-color: var(--cor-background) !important;
 }
 
-/* Título à esquerda */
-.topo p {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
+.navbar-brand2 {
+  font-family: var(--font-secundaria);
+  color: white !important;
   font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.container_header {
-  background-color: var(--cor-background);
-  color: var(--cor-titulo);
-}
-/* Menu à direita */
-.container_menu ul {
-  list-style: none;
+  font-size: 1.2rem;
   display: flex;
-  gap: 1.5rem;
-}
-
-.container_menu a {
+  align-items: center;
+  gap: 8px;
   text-decoration: none;
-  color: var(--cor-titulo);
+  white-space: nowrap;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
   font-weight: 600;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
 }
 
-.container_menu a:hover,
-.container_menu a:focus {
-  background-color: #f7d774;
-  color: #3e2e1c;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  background-color: var(--cor-dourado);
+  color: var(--cor-hover) !important;
 }
 
-/* Seção curso */
-/* Seção curso com vários cards */
-.curso {
-  background-color: #fff;
-  padding: 4rem 2rem;
+.navbar .btn {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  border: none;
 }
 
-.curso-container {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+.navbar .btn:hover {
+  background-color: var(--cor-hover);
 }
 
-.curso-card {
-  background-color: #ede4db;
+/* === SEARCH BAR === */
+.search-bar input {
+  border: 1px solid var(--cor-titulo);
+}
+
+.search-bar input:focus {
+  border-color: var(--cor-dourado);
+  box-shadow: 0 0 0 0.2rem rgba(247, 215, 116, 0.25);
+}
+
+.search-bar button {
+  border-color: var(--cor-titulo);
+  color: var(--cor-titulo);
+}
+
+.search-bar button:hover {
+  background-color: var(--cor-dourado);
+  color: var(--cor-hover);
+}
+
+/* === HERO === */
+.bg-primary2 {
+  background-color: var(white) ;
+ 
+}
+
+.bg-primary2 h1{
+  color: #a68c5b;
+  font-family: var(--font-principal), serif;
+  text-align: center !important;
+  
+
+}
+
+.bg-primary2 p {
+  color: #a68c5b;
+  font-family: var(--font-principal), serif;
+  text-align: center !important;
+}
+
+/* === GRID DE CARDS VERTICAIS === */
+.course-card {
+  background-color: var(--cor-card);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
-.curso-card:hover {
+.course-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
-.curso-card img {
+.course-card img {
   width: 100%;
-  height: auto;
+  height: 180px;
   object-fit: cover;
 }
 
-.curso-card h3 {
+.course-card-body {
+  padding: 16px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.course-card-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.25rem;
-  color: #5c4525;
-  margin: 1rem;
+  color: var(--cor-primaria);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
-.curso-card p {
-  color: #5c4525;
-  margin: 0 1rem 1rem;
+.course-card-text {
+  color: var(--cor-primaria);
   font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+  text-align: center;
 }
 
-.btn {
+.course-card .btn {
   display: block;
-  background-color: #5c4525;
+  background-color: var(--cor-primaria);
   color: #fffaf0;
   padding: 0.75rem 1rem;
   text-decoration: none;
   text-align: center;
-  margin: 0 1rem 1rem;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-  background-color: #3e2e1c;
+.course-card .btn:hover {
+  background-color: var(--cor-hover);
+  color: whitesmoke;
 }
 
-.carousel-container {
-  max-width: 1200px; /* Aumentar a largura máxima para acomodar 3 cards */
-  margin: auto;
-  padding: 20px;
+/* === LISTA DE CARDS HORIZONTAIS (estilo Udemy search) === */
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
-.curso-card {
-  background-color: #ede4db;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+
+.course-list-item {
+  display: flex;
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  background-color: var(--cor-card);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.course-list-item:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+  background-color: var(--cor-hover-claro);
+}
+
+.course-list-item img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-list .btn{
+  display: block;
+  background-color: var(--cor-primaria);
+  color: #fffaf0;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
   text-align: center;
-  transition: transform 0.3s ease-in-out;
-  margin-bottom: 20px; /* Espaçamento inferior para cards em colunas */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.course-info {
+  flex: 1;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%; /* Garante que os cards tenham a mesma altura */
-}
-.curso-card:hover {
-  transform: translateY(-5px);
-}
-.curso-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-.curso-card h3 {
-  font-size: 1.8rem;
-  color: #5c4525;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-.curso-card p {
-  font-size: 1rem;
-  color: #5c4525;
-  margin-bottom: 20px;
-  flex-grow: 1; /* Permite que o parágrafo ocupe o espaço disponível */
-}
-.curso-card .btn {
-  display: inline-block;
-  background-color: #5c4525; /* Cor primária do Bootstrap */
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-.curso-card .btn:hover {
-  background-color: var(--cor-titulo);
-  color: whitesmoke; /* Tom mais escuro ao passar o mouse */
-}
-/* Estilos para o carrossel */
-.carousel-item .row {
-  justify-content: center; /* Centraliza as colunas dentro da linha */
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 50%;
-  padding: 15px;
-}
-.carousel-indicators [data-bs-target] {
-  background-color: #0d6efd;
-}
-/* Responsividade para exibir 1 coluna em telas pequenas, 2 em médias e 3 em grandes */
-@media (max-width: 767.98px) {
-  .carousel-item .col-md-4 {
-      flex: 0 0 100%; /* Uma coluna em telas extra pequenas e pequenas */
-      max-width: 100%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .carousel-item .col-md-4 {
-      flex: 0 0 50%; /* Duas colunas em telas médias */
-      max-width: 50%;
-  }
-}
-@media (min-width: 992px) {
-  .carousel-item .col-md-4 {
-      flex: 0 0 33.333333%; /* Três colunas em telas grandes e extra grandes */
-      max-width: 33.333333%;
-  }
 }
 
- 
+.course-info h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--cor-primaria);
+  margin-bottom: 0.5rem;
+}
+
+.course-info .author {
+  color: var(--cor-texto);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--cor-texto);
+  margin-bottom: 0.75rem;
+}
+
+.course-meta .rating {
+  color: var(--cor-rating);
+  font-weight: 600;
+}
+
+.course-info .price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cor-hover);
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* === FOOTER === */
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: var(--cor-card);
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: var(--cor-primaria);
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 575.98px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .search-bar {
+    max-width: 100%;
+  }
+
+  .course-list-item {
+    flex-direction: column;
+  }
+
+  .course-list-item img {
+    width: 100%;
+    height: auto;
+  }
+}
